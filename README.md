@@ -10,11 +10,16 @@ Will output the following html:
 <p>A paragraph<p>
 ```
 List of supported html functions:
-head	link	footer	header	script	nav
-section	div	span	h1	h2	p
-a	img	table	form	input	label
-ul	li	hr	th	tr	td
-Using the html functions
+|           |           |           |           |          |
+| :--------:|:---------:|:---------:|:---------:|:--------:|
+|   head    |   link    |  footer   |  header   |  script  |
+|   nav     | section   |  div      |   span    |   h1     |
+|   h2      |   h3      |   p       |    a      |   img    |
+|   table   |  form     |   input   |  label    |   ul     |
+|   li      |   hr      |    th     |    tr     |   td     |
+
+ 
+### Using the html functions
 In the above example, we are printing a simple paragraph by passing the text to the function
 
 It is also possible to pass an array to the function and add attributes to the html element
