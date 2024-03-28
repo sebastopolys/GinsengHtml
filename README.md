@@ -81,7 +81,7 @@ Will output:
 ```
 <p id="the_id">The paragraph</p>
 ```
->[CAUTION] 'CONTENT' AND 'TAG' INDEXES ARE REQUIRED -
+>[CAUTION] >'CONTENT' AND 'TAG' INDEXES ARE REQUIRED -
 
 ### Opened and closed html elements
 There are several situations were html functions can return a self enclosed html tag or not
