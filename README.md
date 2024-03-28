@@ -42,14 +42,14 @@ The additional close() function is provided in order to have more control on htm
 
 Use this function to close any opened html tag:
 ```
-close('span');
+close( 'p' );
 ```
 This will output a </span> and close the span element:
 ```
 print_r( 
     p( $array )
     . 'A paragraph'
-    . close('p') );
+    . close( 'p') );
 ```
 Result:
 ```
