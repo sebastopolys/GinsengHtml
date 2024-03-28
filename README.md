@@ -233,3 +233,6 @@ Initial release
 Latest version:
 
 1.0.0
+
+### Author
+sebastopolys
