@@ -36,7 +36,7 @@ This will print out:
 <span id="12" class="theclass class1">
 ```
 ### Additional functions: close()
-Note that on the above example, there is no content inside the html, neither is a closing html tag ( </span> )
+Note that on the above example, there is no content inside the html, neither is a closing html tag (`</span>` )
 
 The additional close() function is provided in order to have more control on html elements closing tag
 
