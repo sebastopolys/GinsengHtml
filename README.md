@@ -146,7 +146,7 @@ Result:
         <div id="id10" class="theclass" custom="10">Some more content 10</div>
 ```
 ### Keys & concepts
-- Functions and arrays
+#### Functions and arrays
 Key of the parser is to understand that you can build the html structure either on the PHP controller file by using the functions, or in the data arrays passed to the functions
 
 I.e.
@@ -196,7 +196,7 @@ Will both output the same html:
     </div>
 </div>
 ```
-### Nesting functions:
+#### Nesting functions:
 It is possible to nest functions inside functions:
 ```
 div( div( p('A nested string' ) ) );
@@ -211,12 +211,12 @@ Will output:
     </div>
 </div>
 ```
-### Nested argument arrays:
+#### Nested argument arrays:
 Both 'tag' and 'content' indexes are required so the content( ) additional function is executed
 
 Use the 'tag' and 'content' index on your arrays to create & nest html elements
 
-### Argument arrays passed to functions
+#### Argument arrays passed to functions
 You can build the arrays passed to functions dinamically, but be aware that this can harm the loading speed of html
 
 Any logic or conditional structure should be managed from the controller file, were you call the easyhtml functions
