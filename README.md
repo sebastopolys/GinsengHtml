@@ -1,4 +1,4 @@
-##EasyHtml is a html parser for PHP
+## EasyHtml is a html parser for PHP
 Provides PHP functions you can use on your code, in order to build large & complex html structures in a more simple, effective and organized way.
 
 Function names make reference to the Html tag to be used by it. I.e:
