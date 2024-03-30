@@ -3,7 +3,7 @@ Provides PHP functions you can use on your code, in order to build large & compl
 
 Function names make reference to the Html tag to be used by on the Html the function outputs. I.e:
 ```
-print_r( p( 'A paragraph' ) )
+print_r( p( 'A paragraph' ) );
 ```
 Will output the following html:
 ```
