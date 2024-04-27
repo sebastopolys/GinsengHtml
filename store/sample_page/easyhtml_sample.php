@@ -31,17 +31,7 @@ $navigation = [
                 [
                     'tag'=>'a',
                     'href'=>'easyhtml.php',
-                    'content'=>'Posts'
-                ]
-            ]
-        ],
-        [
-            'tag'=>'li',
-            'content'=>[
-                [
-                    'tag'=>'a',
-                    'href'=>'examples.php',
-                    'content'=>'Samples'
+                    'content'=>'Postes'
                 ]
             ]
         ],

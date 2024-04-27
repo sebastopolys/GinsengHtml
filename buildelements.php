@@ -12,9 +12,12 @@ define("O","<");
 define("C",">");
 define("Q",'"');
 define("B","/");
+define("E","=");
+define("S"," ");
+
 define("BC",B.C);
 define("OB",O.B);
-define("S"," ");
+define("EQ",E.Q);
 
 
 /**
@@ -71,7 +74,7 @@ function table( $dats ){
 function th( $dats ){
     return buildElement( $dats,__FUNCTION__ );
 }
-function tr( ){
+function tr( $dats ){
     return buildElement( $dats,__FUNCTION__ );
 } 
 function td( $dats){
@@ -151,7 +154,7 @@ function buildElement( $data, $function ){
                       
                    
                 } else {
-                    $fout .= $key . '="' . $value . '"' . S;
+                    $fout .= $key . EQ . $value . Q . S;
                 }
             }
             // Index is 'content'
@@ -170,7 +173,7 @@ function buildElement( $data, $function ){
             return O . $tag . S . $fout . C . $cont . OB . $tag . C;
         }
         if( $multi == TRUE){
-            buildElement( $data );
+            buildElement( $data, $function );
         }
         // not content. Return without the closing tag
         return O . $tag . S . $fout . C ;  
@@ -209,7 +212,7 @@ function buildContent( $data ){
          
         foreach ( $data[$i] as $ky => $vl ) {
             if( $ky !== 'content' && $ky !== 'tag' ) {                
-                $cout .= S . $ky . '="' .$vl. '"';
+                $cout .= S . $ky . EQ . $vl. Q;
             }
         }
         $cout .= C;
@@ -243,9 +246,9 @@ function multipleElements( $key, $data, $tag ){
         foreach ($data as $ku => $vy) {
             if( $ku !== 'content'){
                 if( TRUE === is_array( $vy ) ){                
-                    $mout .= S .$ku . '="' . $vy[$j] .'"';                
+                    $mout .= S . $ku . EQ . $vy[$j] . Q;                
                 } else {
-                    $mout .= S .$ku . '="' . $vy .'"';
+                    $mout .= S . $ku . EQ . $vy . Q;
                 }           
             } 
              // is content
