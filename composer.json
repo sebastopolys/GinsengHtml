@@ -18,10 +18,5 @@
         "allow-plugins": {
             "composer/installers": true
         }
-	},
-    "autoload": {
-        "psr-4": {
-			"ginsenghtmlengine\\": "src/"
-		}
-    }
+	}
 }
