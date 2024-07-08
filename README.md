@@ -36,7 +36,7 @@ class TemplateFileClass
 ```
 Edit namespaces conveniently to match the ``ginsenghtmlengine`` namespace
 
-## Html functions:
+### Html functions:
 Function names make reference to the Html tag to be used by on the Html the function outputs. I.e:
 ```
 print_r( p( 'A paragraph' ) );
