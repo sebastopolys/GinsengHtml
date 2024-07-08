@@ -255,14 +255,14 @@ $array6;
 You can build the arrays passed to functions dinamically, but be aware that this can harm the loading speed of html. Keep the arguments array the smaller possible.
 
 ### Changelog
-~ 1.0.0
-~ 1.1.0
+- 1.0.0
+- 1.1.0
 
 ### Initial release
-~ 1.0.0
+- 1.0.0
 
 ### Latest Version
-~ 1.1.0
+- 1.1.0
 
 ### Author
 sebastopolys
