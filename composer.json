@@ -1,8 +1,8 @@
 {
-    "name": "sebastopolys/easyhtml",
+    "name": "sebastopolys/ginsenghtml",
 	"type": "application",
 	"license": "GPL-2.0-only",
-	"description": "Html parser for PHP",
+	"description": "Html builder engine for PHP",
 	"authors": [
 		{
 			"name": "Sebastian Rossi",
@@ -21,7 +21,7 @@
 	},
     "autoload": {
         "psr-4": {
-			"Halfegg\\": "src/"
+			"ginsenghtmlengine\\": "src/"
 		}
     }
 }

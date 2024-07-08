@@ -1,7 +1,7 @@
 <?php
-namespace EagleStand\views;
+namespace ginsenghtmlengine;
  
-class htmlginseng {
+class ginsenghtml {
 
     public static $htmlTags = [
         'div', 'span', 'form', 'input', 'label', 'h1', 'h2', 'h3', 'p', 'hr', 'ul', 'li', 'img',
@@ -141,91 +141,92 @@ const EQ = self::E.self::Q;
     } 
 }
 
-function tag($function){
-    $tag = explode('\\',$function)[2];
-    return $tag;
+// Remove namespace from __FUNCTION__ parameter
+function tag($function){ 
+     $tag = explode('\\',$function);
+     return end($tag); 
 }
 
 function div($dats){ 
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 function span($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__));
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__));
 }
 function form($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__));
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__));
 }
 function input($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__));
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__));
 }
 function label($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__));
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__));
 }
 function h1($str){
-    return htmlginseng::buildElement( $str, tag(__FUNCTION__));
+    return ginsenghtml::buildElement( $str, tag(__FUNCTION__));
 }
 function h2($str){
-    return htmlginseng::buildElement( $str, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $str, tag(__FUNCTION__) );
 }
 function h3($str){
-    return htmlginseng::buildElement( $str, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $str, tag(__FUNCTION__) );
 }
 function p($str){
-    return htmlginseng::buildElement( $str, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $str, tag(__FUNCTION__) );
 }
 function hr($mode){
-    return htmlginseng::buildElement( $mode, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $mode, tag(__FUNCTION__) );
 }
 function ul($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 function li($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 function img($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 function table($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 function th($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 function tr($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 } 
 function td($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 function a($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 function header($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 function nav($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 function footer($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 function section($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 function head($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 function link($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 function script($dats){
-    return htmlginseng::buildElement( $dats, tag(__FUNCTION__) );
+    return ginsenghtml::buildElement( $dats, tag(__FUNCTION__) );
 }
 /**
  * Additional functions
  */
 function content ( $content ){
-    return htmlginseng::buildContent( $content );
+    return ginsenghtml::buildContent( $content );
 }
 function close( $tag ){  
     return '</' . $tag . '>';

@@ -1,41 +1,17 @@
 <?php
-namespace EasyHtmlPhp;
+namespace ginsenghtmlengine;
 
-include(__DIR__.'/buildelements.php');
-require('store/sample_page/easyhtml_sample.php');
-require('store/datastore.php');
+ini_set( 'display_errors', 1 );
+ini_set( 'display_startup_errors', 1 );
+error_reporting( E_ALL );
+
+ if( file_exists( __DIR__ ).'/vendor/autoload.php' ){
+        require  __DIR__ .'/vendor/autoload.php';
+    } else {
+        die( '<pre>ERROR: cannot load autoloader file</pre>' );
+    }
  
+// Start the thing
 
-
- 
-
-  
-        $op =  head( FALSE )
-
-        . link( $loadcss )
-        . script( $loadjs ) 
-
-    . close('head') 
-
-    
-    . div( $container )
-        . header( $header )          
-       // . div( $ccontent )
-        //  . content( $ccontent )
-          //. content( [['tag'=>'h1','content'=>'The Title' ]])
- 
-        
-            . h3( 'Multiple function' )
-            . div($data_args)
-            
-        
- 
-        .div(div(p('A nested string')))
-
-
-    //. footer ( $footer )
-
-    . close('div');
-
-    print_r( $op );
- 
+$start = new startginseng( );
+print_r($start->print_some_html());

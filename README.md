@@ -174,11 +174,12 @@ List of supported html functions on this version:
 |   h2      |   h3      |   p       |    a      |   img    |
 |   table   |  form     |   input   |  label    |   ul     |
 |   li      |   hr      |    th     |    tr     |   td     |
+
 Please feel free to edit the ``ginsenghtml.php`` file and add any missing html tag if you need
 
 ### Keys & concepts
 #### Functions and arrays
-Key of the parser is to understand that you can build the html structure either on the PHP controller file by using the functions, or in the data arrays passed to the functions
+Key of the parser is to understand that you can build the html structure either on the PHP temlate file by using the functions, or in the data arrays passed to the functions that comes from the controller.
 
 I.e.
 ```
@@ -243,7 +244,7 @@ Will output:
 </div>
 ```
 #### Nested argument arrays:
-Both 'tag' and 'content' indexes are required so the content( ) additional function is executed
+Both 'tag' and 'content' indexes are required so the ``content()`` additional function is executed
 
 Use the 'tag' and 'content' index on your arrays to create & nest html elements
 ```
@@ -254,14 +255,14 @@ $array6;
 You can build the arrays passed to functions dinamically, but be aware that this can harm the loading speed of html. Keep the arguments array the smaller possible.
 
 ### Changelog
-~ 1.0.0
-~ 1.1.0
+- 1.0.0
+- 1.1.0
 
 ### Initial release
-~ 1.0.0
+- 1.0.0
 
 ### Latest Version
-~ 1.1.0
+- 1.1.0
 
 ### Author
 sebastopolys
