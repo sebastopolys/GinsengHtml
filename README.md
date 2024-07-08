@@ -4,9 +4,11 @@ Provides PHP functions you can use on your code, in order to build large & compl
 ### Installation
 
 -Run the following command on a terminal.
+
 ``composer require sebastopolys/ginsenghtml``
 
 -Manual installation
+
 Save the ``ginsenghtml.php`` file in your PHP application.
 
 #Usage:
