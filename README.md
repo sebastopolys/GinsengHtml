@@ -179,7 +179,7 @@ Please feel free to edit the ``ginsenghtml.php`` file and add any missing html t
 
 ### Keys & concepts
 #### Functions and arrays
-Key of the parser is to understand that you can build the html structure either on the PHP temlate file by using the functions, or in the data arrays passed to the functions that micht come from the controller.
+Key of the parser is to understand that you can build the html structure either on the PHP temlate file by using the functions, or in the data arrays passed to the functions that comes from the controller.
 
 I.e.
 ```
