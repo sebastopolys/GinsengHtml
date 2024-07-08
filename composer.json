@@ -2,6 +2,7 @@
     "name": "sebastopolys/ginsenghtml",
 	"type": "application",
 	"license": "GPL-2.0-only",
+	"keywords": ["html","html engine"],
 	"description": "Html builder engine for PHP",
 	"authors": [
 		{
@@ -18,5 +19,10 @@
         "allow-plugins": {
             "composer/installers": true
         }
-	}
+	},
+    "autoload": {
+        "psr-4": {
+			"ginsenghtmlengine\\": "src/"
+		}
+    }
 }
