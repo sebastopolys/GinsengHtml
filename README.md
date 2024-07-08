@@ -2,13 +2,21 @@
 Provides PHP functions you can use on your code, in order to build large & complex html structures in a more simple, effective and organized way.
 
 ### Installation
-After saving the ``ginsenghtml.php`` file in your PHP application, instantiate the class in any other class on the constructor:
+
+-Run the following command on a terminal.
+``composer require sebastopolys/ginsenghtml``
+
+-Manual installation
+Save the ``ginsenghtml.php`` file in your PHP application.
+
+#Usage:
+After intalling, instantiate the class in any other class on the constructor:
 ```
 public function __construct(){
         new ginsenghtml();
     }
 ```
-After this, all html functions will become available in further methods of this class:
+Then, all html functions will become available in further methods of this class:
 ```
 class TemplateFileClass
 {
@@ -26,7 +34,7 @@ class TemplateFileClass
 ```
 Edit namespaces conveniently to match the ``ginsenghtmlengine`` namespace
 
-## Usage:
+## Html functions:
 Function names make reference to the Html tag to be used by on the Html the function outputs. I.e:
 ```
 print_r( p( 'A paragraph' ) );
