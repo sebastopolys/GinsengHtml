@@ -64,7 +64,7 @@ This will print out:
 ```
 <span id="12" class="theclass class1">
 ```
-### Additional functions: close()
+### Additional functions: ``close()``
 Note that on the above example, there is no content inside the html, neither is a closing html tag (`</span>` )
 
 The additional close() function is provided in order to have more control on html elements closing tag
@@ -86,7 +86,7 @@ Result:
 A paragraph
 </p>
 ```
-### Additional function: content()
+### Additional function: ``content()``
 Another additional function is the content() function
 
 This functions takes a content value referenced on the array under the 'content' index. And it uses this value to insert it within the html element
