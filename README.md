@@ -244,7 +244,7 @@ Will output:
 </div>
 ```
 #### Nested argument arrays:
-Both 'tag' and 'content' indexes are required so the content( ) additional function is executed
+Both 'tag' and 'content' indexes are required so the ``content()`` additional function is executed
 
 Use the 'tag' and 'content' index on your arrays to create & nest html elements
 ```
