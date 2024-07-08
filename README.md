@@ -174,6 +174,7 @@ List of supported html functions on this version:
 |   h2      |   h3      |   p       |    a      |   img    |
 |   table   |  form     |   input   |  label    |   ul     |
 |   li      |   hr      |    th     |    tr     |   td     |
+
 Please feel free to edit the ``ginsenghtml.php`` file and add any missing html tag if you need
 
 ### Keys & concepts
