@@ -1,5 +1,5 @@
 <?php
-namespace ginsenghtml;
+namespace GinsengHtml;
  
 class ginsenghtml {
 

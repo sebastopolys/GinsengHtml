@@ -1,28 +1,30 @@
 {
     "name": "sebastopolys/ginsenghtml",
-	"type": "application",
-	"license": "GPL-2.0-only",
-	"keywords": ["html","html engine"],
-	"description": "Html builder engine for PHP",
-	"authors": [
-		{
-			"name": "Sebastian Rossi",
-			"email": "sebastopolys@gmail.com",
-			"homepage": "https://github.com/sebastopolys"
-		}
-	],
-	"config": {
-		"platform": {
-			"php": "8.1"
-		},
-		"optimize-autoloader": true,
+    "type": "library",
+    "license": "GPL-2.0-only",
+    "keywords": ["html", "html engine"],
+    "description": "Html builder engine for PHP",
+    "authors": [
+        {
+            "name": "Sebastian Rossi",
+            "email": "sebastopolys@gmail.com",
+            "homepage": "https://github.com/sebastopolys"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
+    "config": {
+        "optimize-autoloader": true,
         "allow-plugins": {
             "composer/installers": true
         }
-	},
+    },
     "autoload": {
         "psr-4": {
-			"ginsenghtml\\": "src/"
-		}
-    }
+            "GinsengHtml\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "version": "1.1.0"
 }
