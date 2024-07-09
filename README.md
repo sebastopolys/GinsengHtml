@@ -18,7 +18,14 @@ public function __construct(){
         new ginsenghtml();
     }
 ```
-Then, all html functions will become available in further methods of this class:
+Because functions are used to print each html element, it is necesary to call the functions also.
+```
+use function GinsengHtml\{p,h1,h2,span,a};
+```
+Add the ones you are going to use on each file.
+If you change namespace of ginsenghtml class to match your proyect namespace, this step is not neccesary.
+
+After this, all html functions will become available in further methods of this class:
 ```
 class TemplateFileClass
 {
