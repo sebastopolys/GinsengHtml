@@ -2,7 +2,7 @@
     "name": "sebastopolys/ginsenghtml",
     "type": "library",
     "license": "GPL-2.0-only",
-    "keywords": ["html", "html engine"],
+    "keywords": ["html", "html-engine","php","template-engine","php-template","php-template-engine"],
     "description": "Html builder engine for PHP",
     "authors": [
         {
