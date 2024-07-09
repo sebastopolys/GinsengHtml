@@ -118,7 +118,7 @@ Will output:
 ```
 
 > [!CAUTION]
-> 'CONTENT' and 'TAG' indexes arer required when using the ``content()`` function on template files
+> ``'content'`` and ``'tag'`` indexes are required when using the ``content()`` function on template files
 
 ### Opened and closed html elements
 There are several situations were html functions can return a self enclosed html tag or not
