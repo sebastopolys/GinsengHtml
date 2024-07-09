@@ -18,7 +18,7 @@ public function __construct(){
         new ginsenghtml();
     }
 ```
-Because functions are used to print each html element, it is necesary to call the functions also.
+Because functions are used to build html elements, it is necesary to call the functions also.
 ```
 use GinsengHtml\ginsenghtml;
 use function GinsengHtml\{p,h1,h2,span,a};
@@ -28,6 +28,9 @@ If you change namespace of ginsenghtml class to match your proyect namespace, th
 
 After this, all html functions will become available in further methods of this class:
 ```
+use GinsengHtml\ginsenghtml;
+use function GinsengHtml\{h2,div};
+
 class TemplateFileClass
 {
     public function __construct(){
@@ -42,7 +45,6 @@ class TemplateFileClass
     }
 }
 ```
-Edit namespaces conveniently to match the ``ginsenghtmlengine`` namespace
 
 ### Html functions:
 Function names make reference to the Html tag to be used by on the Html the function outputs. I.e:
@@ -53,8 +55,6 @@ Will output the following html:
 ```
 <p>A paragraph<p>
 ```
-
-
  
 ### Using the html functions
 In the above example, we are printing a simple paragraph by passing the text to the function
