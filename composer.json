@@ -1,19 +1,22 @@
 {
     "name": "sebastopolys/ginsenghtml",
-    "description": "Html builder engine for PHP",
     "type": "library",
-    "license": "MIT",
+    "license": "GPL-2.0-only",
+    "keywords": ["html", "html engine"],
+    "description": "Html builder engine for PHP",
+    "authors": [
+        {
+            "name": "Sebastian Rossi",
+            "email": "sebastopolys@gmail.com",
+            "homepage": "https://github.com/sebastopolys"
+        }
+    ],
+    "require": {
+        "php": ">=7.4"
+    },
     "autoload": {
         "psr-4": {
             "GinsengHtml\\": "src/"
         }
-    },
-    "authors": [
-        {
-            "name": "Seba Rossi",
-            "email": "sebastopolys@gmail.com"
-        }
-    ],
-    "require": {},
-    "minimum-stability":"stable"
+    }
 }
