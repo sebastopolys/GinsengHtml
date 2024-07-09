@@ -46,7 +46,7 @@ const EQ = self::E.self::Q;
                             // multipe element
                             // buildfirst element here
                             // $fout .= $key . '="' . $value[0] . '"' . S;
-                            return multipleElements( $key, $data, $tag);                       
+                            return self::multipleElements( $key, $data, $tag);                       
                         } else {
                             $fout .= $key . self::EQ . $value . self::Q . self::S;
                         }
@@ -54,7 +54,7 @@ const EQ = self::E.self::Q;
                     // Index is 'content'
                     if( $key === 'content' ){
                         if(TRUE == is_array( $value ) ){                     
-                            $cont = buildContent( $value );
+                            $cont = self::buildContent( $value );
                         } else {
                             $cont = $value;
                         }
@@ -66,7 +66,7 @@ const EQ = self::E.self::Q;
                     return self::O . $tag . self::S . $fout . self::C . $cont . self::OB . $tag . self::C;
                 }
                 if( $multi == TRUE){
-                    buildElement( $data, $function );
+                    return self::buildElement( $data, $function );
                 }
                 // not content. Return without the closing tag
                 return self::O . $tag . self::S . $fout . self::C ;  
@@ -99,7 +99,7 @@ const EQ = self::E.self::Q;
                 $cout .= C;            
                 if( TRUE == is_array( $data[$i]['content'] ) ){
                     // recursion
-                    $cont =  buildContent( $data[$i]['content'] );
+                    $cont =  self::buildContent( $data[$i]['content'] );
                 } else {
                     $cont = $data[$i]['content'];
                 }            
@@ -126,7 +126,7 @@ const EQ = self::E.self::Q;
 
                         if( TRUE === is_array( $vy ) ){
                             if( isset( $vy[$j]['tag'] ) ){                        
-                                $con = buildContent( $vy );
+                                $con = self::buildContent( $vy );
                             } else {
                                 $con = $vy[$j];
                             }                                             
