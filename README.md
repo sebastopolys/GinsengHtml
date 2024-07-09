@@ -20,6 +20,7 @@ public function __construct(){
 ```
 Because functions are used to print each html element, it is necesary to call the functions also.
 ```
+use GinsengHtml\ginsenghtml;
 use function GinsengHtml\{p,h1,h2,span,a};
 ```
 Add the ones you are going to use on each file.
