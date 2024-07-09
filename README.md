@@ -95,9 +95,7 @@ A paragraph
 </p>
 ```
 ### Additional function: ``content()``
-Another additional function is the content() function
-
-This functions takes a content value referenced on the array under the 'content' index. And it uses this value to insert it within the html element
+The ``content()`` function takes a content value referenced on the array under the ``'content'`` index. And it uses this value to insert it within the html element
 
 This function takes a non associative array, composed with one or more associative arrays
 
