@@ -30,8 +30,8 @@ const EQ = self::E.self::Q;
     public static function buildElement($data, $function) 
     {
             $fout = $tag = $cont = '';
-            // only main namespace is removed !
-            $tag = explode( '\\',$function )[0];
+            $xtag = explode( '\\', $function );
+            $tag = end($xtag);
             // $data is a string, return with empty attributes, string content and closing tag
             if( TRUE == is_string( $data ) ){
                return self::O . $tag . self::C . $data . self::OB . $tag . self::C; 
