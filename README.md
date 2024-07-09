@@ -146,7 +146,7 @@ $array3 = [
         ];
 label( $array3 );
 ```
-If boolean value is passed
+- If a boolean value is passed
 ```
 div( TRUE );
 ```
