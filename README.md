@@ -12,7 +12,7 @@ Provides PHP functions you can use on your code, in order to build large & compl
 Save the ``ginsenghtml.php`` file in your PHP application.
 
 ### Usage:
-After intalling, instantiate the class in any other class on the constructor:
+After installing, instantiate the class in any other class on the constructor:
 ```
 public function __construct(){
         new ginsenghtml();
