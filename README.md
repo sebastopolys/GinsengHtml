@@ -150,7 +150,7 @@ If boolean value is passed
 ```
 div( TRUE );
 ```
-Note that if any html element is printed without its closing tag, browsers will add it at the end of the <body> automatically
+Note that if any html element is printed without its closing tag, browsers will add it at the end of the ``<body>`` automatically
 
 ### Print multiple elements
 It is possible to output multiple html tags at the same time, using any html function that takes a single array.
