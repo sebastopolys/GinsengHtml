@@ -123,17 +123,22 @@ Will output:
 ### Opened and closed html elements
 There are several situations were html functions can return a self enclosed html tag or not
 
-- Without closing tag
-When using any html function with array NOT containing the 'content' index
+##### Without closing tag
+- When using any html function with array NOT containing the 'content' index
+```
+div(['id'=>'div_id']);
+```
+- If a boolean value is passed to the function
+```
+div( FALSE );
+```
 
-If a boolean value is passed to the functions
-
-- With closing tag
-When passing a string to any function:
+##### With closing tag
+- When passing a string to any function, instead of an array:
 ```
 label( 'A label string' );
 ```
-If the argument array passed to the function contains the 'content' index
+- If the argument array passed to the function contains the 'content' index
 ```
 $array3 = [
             'class'=>'label',
@@ -143,8 +148,10 @@ label( $array3 );
 ```
 If boolean value is passed
 ```
-div( FALSE );
+div( TRUE );
 ```
+Note that if any html element is printed without its closing tag, browsers will add it at the end of the <body> automatically
+
 ### Print multiple elements
 It is possible to output multiple html tags at the same time, using any html function that takes a single array.
 
