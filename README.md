@@ -26,7 +26,7 @@ class myclass
     }
 }
 ```
-Because functions are used to build html elements, it is necesary to call the functions also.
+Because functions are used to build html elements, it is necessary to call the html functions also.
 ```
 <?php
 namespace MyNamespace;
@@ -42,7 +42,8 @@ class myclass
 }
 ```
 Add the necessary html functions on each template file.
-If you change namespace of ginsenghtml class to match your project namespace, it is not neccesary to add ``use function`` .
+
+If you change namespace of ginsenghtml class to match your project namespace, it is not neccesary to add ``use function`` declaration.
 
 After this, html functions will become available in further methods of your class:
 ```
