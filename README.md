@@ -44,7 +44,7 @@ myclass
 Add the necessary html functions on each template file.
 If you change namespace of ginsenghtml class to match your project namespace, it is not neccesary to add ``use function`` .
 
-After this, html functions will become available in further methods of this class:
+After this, html functions will become available in further methods of your class:
 ```
 use GinsengHtml\ginsenghtml;
 use function GinsengHtml\{h2,div};
@@ -93,7 +93,7 @@ This will print out:
 ### Additional functions: ``close()``
 Note that on the above example, there is no content inside the html, neither is a closing html tag (`</span>` )
 
-The additional ``close()`` function is provided in order to have more control on html elements closing and opening tags
+The additional ``close()`` function is provided in order to have more control on html elements closing and opening
 
 Use this function to close any opened html tag:
 ```
@@ -113,7 +113,7 @@ A paragraph
 </p>
 ```
 ### Additional function: ``content()``
-The ``content()`` function takes a content value referenced on the array under the ``'content'`` index. And it uses this value to insert it within the html element
+The ``content()`` function takes a content value referenced on the given array under the ``'content'`` index. And it uses this value to insert it within the html element
 
 This function takes a non associative array, composed with one or more associative arrays
 
