@@ -3,7 +3,7 @@ Provides PHP functions you can use on your code, in order to build large & compl
 
 ### Installation
 
-- Run the following command on a terminal.
+- Install with composer using the following command on a terminal.
 
 ``composer require sebastopolys/ginsenghtml``
 
@@ -19,7 +19,7 @@ namespace MyNamespace;
 
 use GinsengHtml\ginsenghtml;
 
-myclass
+class myclass
 {
     public function __construct(){
         new ginsenghtml();
@@ -34,7 +34,7 @@ namespace MyNamespace;
 use GinsengHtml\ginsenghtml;
 use function GinsengHtml\{p,h1,h2,span,a};
 
-myclass
+class myclass
 {
     public function __construct(){
         new ginsenghtml();
@@ -46,10 +46,12 @@ If you change namespace of ginsenghtml class to match your project namespace, it
 
 After this, html functions will become available in further methods of your class:
 ```
+<?php
+namespace MyNamespace;
 use GinsengHtml\ginsenghtml;
 use function GinsengHtml\{h2,div};
 
-class TemplateFileClass
+class MyTemplateFileClass
 {
     public function __construct(){
 
@@ -170,7 +172,7 @@ div( TRUE );
 ```
 Note that if any html element is printed without its closing tag, browsers will add it at the end of the ``<body>`` automatically
 
-### Print multiple elementson with a single html function
+### Print multiple elements with a single html function
 It is possible to output multiple html tags using a single html function.
 
 In order to achieve this the array passed to the function must be indexed without associative keys:
@@ -191,9 +193,9 @@ $array4 = [
             'custom'=>[3,5,7,10]
         ];
 ```
-Giving this array to a function will print the amount of elements represented by the count of the first array on the $args array.
+Giving this array to a function will print the amount of elements represented by the count of the first array on the array.
 
-In the above example array, it would be the count of "id" values, which is 4
+In the above sample array, it would be the count of "id" values, which is 4
 ```
 print_r( div( $array4 ) );
 ```
@@ -206,7 +208,7 @@ Result:
         <div id="id10" class="theclass" custom="10">Some more content 10</div>
 ```
 > [!CAUTION]
-> The ``multiple()`` additional function is NOT intended to use on template files. Doing this could drive to unexpected results
+> The ``multiple()`` function is NOT intended to use on template files. Doing this could drive to unexpected results
 
 ### Supported Html tags (functions)
 List of supported html functions on this version:
