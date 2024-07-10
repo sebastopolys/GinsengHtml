@@ -213,7 +213,7 @@ Result:
 
 ### Supported Html tags (functions)
 
-|           List of supported html functions		   |
+|           |           |           |           |          |
 | :--------:|:---------:|:---------:|:---------:|:--------:|
 |   head    |   link    |  footer   |  header   |  script  |
 |   nav     | section   |  div      |   span    |   h1     |
