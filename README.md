@@ -16,10 +16,12 @@ After installing, instantiate ``ginsenghtml`` class in the constructor of any ot
 ```
 <?php
 namespace MyNamespace;
+
 use GinsengHtml\ginsenghtml;
 
-myclass{
-public function __construct(){
+myclass
+{
+    public function __construct(){
         new ginsenghtml();
     }
 }
@@ -28,11 +30,13 @@ Because functions are used to build html elements, it is necesary to call the fu
 ```
 <?php
 namespace MyNamespace;
+
 use GinsengHtml\ginsenghtml;
 use function GinsengHtml\{p,h1,h2,span,a};
 
-myclass{
-public function __construct(){
+myclass
+{
+    public function __construct(){
         new ginsenghtml();
     }
 }
