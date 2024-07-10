@@ -209,19 +209,18 @@ Result:
         <div id="id10" class="theclass" custom="10">Some more content 10</div>
 ```
 > [!CAUTION]
-> The ``multiple()`` function is NOT intended to use on template files. Doing this could drive to unexpected results
+> The ``multiple()`` function is NOT intended to be used on template files. Doing this could drive to unexpected results
 
 ### Supported Html tags (functions)
 List of supported html functions on this version:
-|           |           |           |           |          |
-| :--------:|:---------:|:---------:|:---------:|:--------:|
+
 |   head    |   link    |  footer   |  header   |  script  |
 |   nav     | section   |  div      |   span    |   h1     |
 |   h2      |   h3      |   p       |    a      |   img    |
 |   table   |  form     |   input   |  label    |   ul     |
 |   li      |   hr      |    th     |    tr     |   td     |
 
-Please feel free to edit the ``ginsenghtml.php`` file and add any missing html tag if you need
+Feel free to edit the ``ginsenghtml.php`` file and add any missing html tag if you need
 
 ### Keys & concepts
 #### Functions and arrays
