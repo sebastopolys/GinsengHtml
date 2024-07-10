@@ -156,8 +156,8 @@ div( TRUE );
 ```
 Note that if any html element is printed without its closing tag, browsers will add it at the end of the ``<body>`` automatically
 
-### Print multiple elements
-It is possible to output multiple html tags at the same time, using any html function that takes a single array.
+### Print multiple elementson with a single html function
+It is possible to output multiple html tags using a single html function.
 
 In order to achieve this the array passed to the function must be indexed without associative keys:
 ```
@@ -191,6 +191,8 @@ Result:
         <div id="id7" class="theclass" custom="7">Another text 7</div>
         <div id="id10" class="theclass" custom="10">Some more content 10</div>
 ```
+> [!CAUTION]
+> The ``multiple()`` additional function is NOT intended to use on template files. Doing this could drive to unexpected results
 
 ### Supported Html tags (functions)
 List of supported html functions on this version:
