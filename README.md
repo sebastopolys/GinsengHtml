@@ -208,8 +208,6 @@ Result:
         <div id="id7" class="theclass" custom="7">Another text 7</div>
         <div id="id10" class="theclass" custom="10">Some more content 10</div>
 ```
-> [!CAUTION]
-> The ``multiple()`` function is NOT intended to be used on template files. Doing this could drive to unexpected results
 
 ### Supported Html tags (functions)
 
