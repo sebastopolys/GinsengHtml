@@ -7,16 +7,20 @@ Provides PHP functions you can use on your code, in order to build large & compl
 
 ``composer require sebastopolys/ginsenghtml``
 
--Manual installation
+- Manual installation
 
-Save the ``ginsenghtml.php`` file in your PHP application.
+Save the ``ginsenghtml.php`` file somewere in your PHP application.
 
 ### Usage:
-After installing, instantiate the class in any other class on the constructor:
+After installing, instantiate ``ginsenghtml`` class in the constructor of any other class:
 ```
 public function __construct(){
         new ginsenghtml();
     }
+```
+Include the class to your template files
+```
+use GinsengHtml\ginsenghtml;
 ```
 Because functions are used to build html elements, it is necesary to call the functions also.
 ```
@@ -24,9 +28,9 @@ use GinsengHtml\ginsenghtml;
 use function GinsengHtml\{p,h1,h2,span,a};
 ```
 Add the ones you are going to use on each file.
-If you change namespace of ginsenghtml class to match your proyect namespace, this step is not neccesary.
+If you change namespace of ginsenghtml class to match your project namespace, this is not neccesary.
 
-After this, all html functions will become available in further methods of this class:
+After this, html functions will become available in further methods of this class:
 ```
 use GinsengHtml\ginsenghtml;
 use function GinsengHtml\{h2,div};
@@ -75,13 +79,13 @@ This will print out:
 ### Additional functions: ``close()``
 Note that on the above example, there is no content inside the html, neither is a closing html tag (`</span>` )
 
-The additional close() function is provided in order to have more control on html elements closing tag
+The additional ``close()`` function is provided in order to have more control on html elements closing and opening tags
 
 Use this function to close any opened html tag:
 ```
 close( 'p' );
 ```
-This will output a </span> and close the span element:
+This will output a self enclosed paragraph element:
 ```
 print_r( 
     p( $array )
