@@ -14,21 +14,31 @@ Save the ``ginsenghtml.php`` file somewere in your PHP application.
 ### Usage:
 After installing, instantiate ``ginsenghtml`` class in the constructor of any other class:
 ```
+<?php
+namespace MyNamespace;
+use GinsengHtml\ginsenghtml;
+
+myclass{
 public function __construct(){
         new ginsenghtml();
     }
-```
-Include the class to your template files
-```
-use GinsengHtml\ginsenghtml;
+}
 ```
 Because functions are used to build html elements, it is necesary to call the functions also.
 ```
+<?php
+namespace MyNamespace;
 use GinsengHtml\ginsenghtml;
 use function GinsengHtml\{p,h1,h2,span,a};
+
+myclass{
+public function __construct(){
+        new ginsenghtml();
+    }
+}
 ```
-Add the ones you are going to use on each file.
-If you change namespace of ginsenghtml class to match your project namespace, this is not neccesary.
+Add the necessary html functions on each template file.
+If you change namespace of ginsenghtml class to match your project namespace, it is not neccesary to add ``use function`` .
 
 After this, html functions will become available in further methods of this class:
 ```
