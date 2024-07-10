@@ -212,8 +212,8 @@ Result:
 > The ``multiple()`` function is NOT intended to be used on template files. Doing this could drive to unexpected results
 
 ### Supported Html tags (functions)
-List of supported html functions on this version:
 
+|           List of supported html functions		   |
 | :--------:|:---------:|:---------:|:---------:|:--------:|
 |   head    |   link    |  footer   |  header   |  script  |
 |   nav     | section   |  div      |   span    |   h1     |
