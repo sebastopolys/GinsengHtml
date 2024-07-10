@@ -214,6 +214,7 @@ Result:
 ### Supported Html tags (functions)
 List of supported html functions on this version:
 
+| :--------:|:---------:|:---------:|:---------:|:--------:|
 |   head    |   link    |  footer   |  header   |  script  |
 |   nav     | section   |  div      |   span    |   h1     |
 |   h2      |   h3      |   p       |    a      |   img    |
