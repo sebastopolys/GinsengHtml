@@ -281,15 +281,15 @@ Will output:
 </div>
 ```
 #### Nested argument arrays:
-Both 'tag' and 'content' indexes are required so the ``content()`` additional function is executed
+Both 'tag' and 'content' indexes are required so the ``content()`` additional function is executed recursively
 
-Use the 'tag' and 'content' index on your arrays to create & nest html elements
+Use both 'tag' and 'content' index on your arrays to create & nest html elements.
 ```
 $array6;
 ```
 
 #### Argument arrays passed to functions
-You can build the arrays passed to functions dinamically, but be aware that this can harm the loading speed of html. Keep the arguments array the smaller possible.
+You can build the arrays passed to functions dinamically, but be aware that this can harm the loading speed of page load. Try to keep the arguments array the smaller as possible.
 
 ### Changelog
 - 1.0.0
