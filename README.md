@@ -12,7 +12,7 @@ Provides PHP functions you can use on your code, in order to build large & compl
 Save the ``ginsenghtml.php`` file somewere in your PHP application.
 
 ### Usage:
-After installing, instantiate ``ginsenghtml`` class in the constructor of any other class:
+After installing, instantiate ``ginsenghtml`` class in the constructor of a class:
 ```
 <?php
 namespace MyNamespace;
@@ -26,6 +26,10 @@ class myclass
     }
 }
 ```
+> [!NOTE]
+> ginsenghtml is a static class, so it only needs to be instantiated
+> only on the first template file that is loaded.
+
 Because functions are used to build html elements, it is necessary to call the html functions also.
 ```
 <?php
@@ -33,13 +37,6 @@ namespace MyNamespace;
 
 use GinsengHtml\ginsenghtml;
 use function GinsengHtml\{p,h1,h2,span,a};
-
-class myclass
-{
-    public function __construct(){
-        new ginsenghtml();
-    }
-}
 ```
 Add the necessary html functions on each template file.
 
@@ -54,11 +51,6 @@ use function GinsengHtml\{h2,div};
 
 class MyTemplateFileClass
 {
-    public function __construct(){
-
-        new ginsenghtml();
-    }
-
     public function print_some_html(){
 
         return div(['id'=>'head_div','style'=>'background-color:yellow;','content'=>
