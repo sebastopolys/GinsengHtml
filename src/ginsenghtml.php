@@ -18,15 +18,6 @@ const BC = self::B.self::C;
 const OB = self::O.self::B;
 const EQ = self::E.self::Q;
 
-    public static function __callStatic($name, $arguments) 
-    {
-        if (in_array($name, self::$htmlTags)) 
-        {
-            return self::buildElement($arguments[0], $name);
-        }
-        throw new \BadMethodCallException("Method $name does not exist.");
-    }
-    
     public static function buildElement($data, $function) 
     {
             $fout = $tag = $cont = '';
