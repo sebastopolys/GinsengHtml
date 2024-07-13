@@ -27,7 +27,7 @@ class myclass
 }
 ```
 > [!NOTE]
-> ginsenghtml is a static class so it needs to be instantiated
+> ``ginsenghtml()`` is a static class so it needs to be instantiated
 > only once, on the first template file that is loaded.
 
 
