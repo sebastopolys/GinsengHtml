@@ -27,8 +27,9 @@ class myclass
 }
 ```
 > [!NOTE]
-> ginsenghtml is a static class, so it only needs to be instantiated
-> only on the first template file that is loaded.
+> ginsenghtml is a static class so it needs to be instantiated
+> only once, on the first template file that is loaded.
+
 
 Because functions are used to build html elements, it is necessary to call the html functions also.
 ```
