@@ -71,7 +71,7 @@ Will output the following html:
 ```
  
 ### Using the html functions
-In the above example, we are printing a simple paragraph by passing the text to the function
+In the above example, a paragraph is built by passing a string to the function
 
 It is also possible to pass an array to the function and add attributes to the html element
 ```
